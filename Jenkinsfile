@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Install Docker'){
             steps{
-                sudo sh "./scripts/installdocker.sh"
+                sh "./scripts/installdocker.sh"
             }
         }
         stage('Deploy'){
