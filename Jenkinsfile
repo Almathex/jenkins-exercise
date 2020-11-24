@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Clone directory'){
             steps{
-                sudo sh "./scripts/clone.sh"
+                sh "./scripts/clone.sh"
             }
         }
         stage('Install Docker'){
