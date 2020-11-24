@@ -1,6 +1,6 @@
 #!/bin/bash
 curl https://get.docker.com | bash
-sudo usermod -aG docker $(whoami)
+usermod -aG docker $(whoami)
 apt update
 apt install -y curl jq
 version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
